@@ -1,0 +1,136 @@
+/*
+Theme Name: my-theme
+Theme URI: 
+Author: shah
+Author URI: 
+Description: Wordpress Theme
+Version: 1.0
+*/
+
+body, html {
+    margin:0;
+    padding:0;   
+    font-family: 'Calibri'; 
+}
+header {
+    margin:0;
+    padding:5px 10px;
+    background-color: beige;
+    border-bottom: solid 1px gray;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+header span {
+    margin:10px;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+header a:hover {
+    text-decoration: underline;
+}
+footer {
+    margin:0;
+    padding:10px;
+    background-color: beige;
+    border-top: solid 1px gray;
+}
+#main-container {
+    margin:0;
+    padding:10px;
+}
+
+p {
+    text-align: left;
+}
+
+.post-ref-group {
+}
+
+.post-ref {
+    display: inline-block;
+    padding:4px;
+    margin:10px;
+    border:solid 1px gray;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 4px;
+    width:130px;
+    height:200px;
+    text-decoration: none;
+    color:#333;
+    vertical-align: top;
+}
+.post-ref:hover {
+    box-shadow: 3px 3px 3px orange;
+}
+
+.post-ref img {
+    width:125px;
+    height:125px;
+    border-radius:4px;
+    margin-bottom:10px;
+}
+
+.post-ref .title {
+    /* font-size: larger; */
+    font-size:small;
+    font-weight: 800;
+}
+.post-ref .excerpt p {
+    text-align: left;
+    font-size: x-small;
+    overflow:hidden;
+    height: 35px;
+}
+
+.post canvas {
+    width:700px;
+    height:700px;
+    outline:none;
+    border:none;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.main-animation {
+    width:700px;
+    height:700px;
+    outline:none;
+    border:none;
+    box-shadow: 5px 5px 10px gray;
+    margin-right:20px;
+    margin-bottom:20px;
+    float:left;
+
+}
+
+h1 {
+    margin:0;
+
+}
+
+h2 {
+    margin:0;
+    font-size:14px;
+    color:gray;
+}
+
+.fill-remaining-space {
+    flex-grow: 1;
+}
+
+#comments {
+    padding: 10px;
+}
+
+.previous-next { font-size:10px; }
+.article-info p { font-size:10px; color:gray; padding: 0; margin: 0;}
+.article-info a { text-decoration: none; color: gray; }
+.article-info a:hover { text-decoration: underline;  }
+
+.showcase {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+}
