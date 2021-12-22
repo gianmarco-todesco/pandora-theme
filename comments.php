@@ -1,3 +1,4 @@
+<!-- comments.php -->
 <div id="comments" class="comments-area">
 <h3>Commenti</h3>
 

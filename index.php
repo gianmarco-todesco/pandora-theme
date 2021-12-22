@@ -1,7 +1,7 @@
-
 <?php get_header(); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<!-- index.php -->
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 <?php
 //loop through category
 $cat_args=array(

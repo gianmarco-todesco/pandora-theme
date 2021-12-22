@@ -23,9 +23,9 @@ get_header(); ?>
     $originalpost = $post;
     $args=array(
         'post_type' => 'post',
-        'posts_per_page' => -1,
         'category' => 'Animazioni',
-        'meta_query' => array( array( 'key' => '_thumbnail_id'  )  )
+        'meta_query' => array( array( 'key' => '_thumbnail_id'  )  ),
+        'numberposts' => 8
     );
     $posts=get_posts($args);    
     foreach($posts as $post) { ?>

@@ -42,6 +42,16 @@ footer {
     padding:10px;
 }
 
+article {
+    margin:0;
+    padding:10px;
+}
+
+.animation-div {
+    float: left;
+    margin-right: 20px;
+}
+
 p {
     text-align: left;
 }

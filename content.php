@@ -50,40 +50,11 @@
 
 <?php else: ?>
 
-	<!--
-	<p>SONO UN POST DENTRO content.php </p>
-	
-		
-	<?php 
-	echo "div=" . get_post_meta($post->ID, 'animation-div', true) . "<br/>"; 
-	$mykey_values = get_post_custom_values( 'animation-div' );
- 
-	foreach ( $mykey_values as $key => $value ) {
-		echo "$key => '$value'";
-		if($value == "canvas") 
-		{
-			echo "<strong>CANVAS</strong><br/>";
-			the_title();
-			echo "<br/>";
-			
-		} 
-		echo '<br/>';
-	}
-	?>
-	-->
-
-
-<div id="main-container">
-
 	
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 	<?php
 		$animation_div = get_post_meta($post->ID, 'animation-div', true);
-		$animation_div_id = get_post_meta($post->ID, 'animation-div-id', true);
-		if(!$animation_div) $animation_div = "canvas";
-		if(!$animation_div_id) $animation_div_id = "myCanvas";
-		echo '<' . $animation_div . ' id="' . $animation_div_id . 
-			'" class="main-animation"></' . $animation_div . '>';
+		if($animation_div) echo '<div class="animation-div">' . $animation_div . '</div>';
 	?>
 		
 	<h1><?php the_title(); ?></h1>
@@ -117,6 +88,5 @@
 	<!-- .entry-footer -->
 
 </article><!-- #post-<?php the_ID(); ?> -->
-</div> <!-- main-container -->
 <p style="clear:left;"></p>
 <?php endif; ?>
