@@ -19,13 +19,14 @@ get_header(); ?>
 </div>
 
 <div class="showcase">
+    <!-- sono qui -->
     <?php
     $originalpost = $post;
     $args=array(
         'post_type' => 'post',
         'category' => 'Animazioni',
         'meta_query' => array( array( 'key' => '_thumbnail_id'  )  ),
-        'numberposts' => 8
+        'numberposts' => 10
     );
     $posts=get_posts($args);    
     foreach($posts as $post) { ?>
